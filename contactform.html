@@ -49,6 +49,10 @@
         font-size: 40%;
       }
 
+      .tmp {
+        display: none;
+      }
+
       #tmp1 {
         background-image: url("/img/contactus/tmp1.jpg");
       }
@@ -149,7 +153,11 @@
             <div class="container">
               <div class="row">
                 <div class="col-xs-12 col-sm-4 p-1">
-                  <div class="card text-white bg-dark" style="height: 57px;">
+                  <div
+                    class="card text-white bg-dark"
+                    onclick="showImages()"
+                    style="height: 57px;"
+                  >
                     <div class="card-body">
                       <p class="card-text text-center">
                         <i
@@ -160,7 +168,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 p-1">
+                <div class="col-xs-12 col-sm-4 p-1 tmp">
                   <div id="tmp1" class="thumb-img">
                     <div
                       class="thumb-text text-white bg-dark position-absolute mb-1 mr-2"
@@ -171,7 +179,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 p-1">
+                <div class="col-xs-12 col-sm-4 p-1 tmp">
                   <div id="tmp2" class="thumb-img">
                     <div
                       class="thumb-text text-white bg-dark position-absolute mb-1 mr-2"
@@ -182,7 +190,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 p-1">
+                <div class="col-xs-12 col-sm-4 p-1 tmp">
                   <div id="tmp3" class="thumb-img">
                     <div
                       class="thumb-text text-white bg-dark position-absolute mb-1 mr-2"
@@ -193,7 +201,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 p-1">
+                <div class="col-xs-12 col-sm-4 p-1 tmp">
                   <div id="tmp4" class="thumb-img">
                     <div
                       class="thumb-text text-white bg-dark d-block position-absolute mb-1 mr-2"
@@ -204,7 +212,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 p-1">
+                <div class="col-xs-12 col-sm-4 p-1 tmp">
                   <div id="tmp5" class="thumb-img">
                     <div
                       class="thumb-text text-white bg-dark d-block position-absolute mb-1 mr-2"
@@ -220,9 +228,11 @@
             <div class="container mt-1 mb-2">
               <div class="row">
                 <div class="col-12 text-center">
-                  <b>CAPTCHA</b>
+                  <!-- <b>CAPTCHA</b>
                   <img src="/img/contactus/captcha.png" alt="" />
-                  <button class="btn btn-light">CAPTCHA</button>
+                  <button class="btn btn-light">CAPTCHA</button> -->
+
+                  <img src="/img/contactus/recaptcha.png" style="width:280px" />
                 </div>
               </div>
               <div class="row">
@@ -251,5 +261,13 @@
         </div>
       </div>
     </div>
+    <script>
+      function showImages() {
+        var x = document.getElementsByClassName("tmp");
+        for (let i = 0; i < x.length; i++) {
+          x[i].style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
