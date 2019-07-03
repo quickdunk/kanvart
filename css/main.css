@@ -13,3 +13,13 @@
 .custom-font {
   font-family: "Oswald", sans-serif;
 }
+
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: white;
+}
