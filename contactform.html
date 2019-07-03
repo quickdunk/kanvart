@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kanvart</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+      rel="stylesheet"
+    />
+
+    <link href="/css/main.css" rel="stylesheet" />
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+
+      .left-side {
+        background-image: url("/img/aboutus/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .thumb-img {
+        height: 57px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+      }
+
+      .thumb-text {
+        width: 85px;
+        bottom: 0;
+      }
+
+      .thumb-img small {
+        font-size: 40%;
+      }
+
+      #tmp1 {
+        background-image: url("/img/contactus/tmp1.jpg");
+      }
+
+      #tmp2 {
+        background-image: url("/img/contactus/tmp2.jpg");
+      }
+
+      #tmp3 {
+        background-image: url("/img/contactus/tmp3.jpg");
+      }
+
+      #tmp4 {
+        background-image: url("/img/contactus/tmp4.jpg");
+      }
+
+      #tmp5 {
+        background-image: url("/img/contactus/tmp5.jpg");
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="row min-vh-100">
+      <!-- <div class="col-md-6 p-0 d-none d-md-block d-lg-block left-side"></div> -->
+      <div class="col-md-6 p-0 left-side"></div>
+      <div class="col-md-6 col-xs-12 p-0 d-flex">
+        <div
+          class="container align-middle align-self-center"
+          style="width:330px;"
+        >
+          <p class="text-center">
+            <img
+              src="/img/contactus/logo.png"
+              style="width:130px;"
+              class="mb-3"
+            />
+            <br />
+            <b>&Uacute;nete</b>, disfruta de los diseños de <br />
+            otros artistas y env&iacute;a los tuyos
+          </p>
+          <form>
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="Nombres"
+              class="form-control mb-2"
+            />
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Apellidos"
+              class="form-control mb-2"
+            />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Correo electr&oacute;nico"
+              class="form-control mb-2"
+            />
+            <input
+              type="text"
+              name="nickname"
+              id="nickname"
+              placeholder="Alias"
+              class="form-control mb-2"
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Contraseña (entre 6 y 8 caracteres)"
+              class="form-control mb-2"
+            />
+            <input
+              type="password"
+              name="passwordConfirm"
+              id="passwordConfirm"
+              placeholder="Confirmar contraseña"
+              class="form-control mb-2"
+            />
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Tel&eacute;fono (formato internacional)"
+              class="form-control mb-2"
+            />
+            <input
+              type="text"
+              name="country"
+              id="country"
+              placeholder="Pa&iacute;s"
+              class="form-control mb-2"
+            />
+            <p class="text-center">
+              <small>Puedes enviar 5 diseños en esta convocatoria </small>
+              <i class="fas fa-question-circle"></i>
+            </p>
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-4 p-1">
+                  <div class="card text-white bg-dark" style="height: 57px;">
+                    <div class="card-body">
+                      <p class="card-text text-center">
+                        <i
+                          class="fas fa-plus-circle"
+                          style="font-size: 1.3em"
+                        ></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 p-1">
+                  <div id="tmp1" class="thumb-img">
+                    <div
+                      class="thumb-text text-white bg-dark position-absolute mb-1 mr-2"
+                    >
+                      <small class="pl-1 d-block position-relative">
+                        Image 1
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 p-1">
+                  <div id="tmp2" class="thumb-img">
+                    <div
+                      class="thumb-text text-white bg-dark position-absolute mb-1 mr-2"
+                    >
+                      <small class="pl-1 d-block position-relative">
+                        Image 2
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 p-1">
+                  <div id="tmp3" class="thumb-img">
+                    <div
+                      class="thumb-text text-white bg-dark position-absolute mb-1 mr-2"
+                    >
+                      <small class="pl-1 d-block position-relative">
+                        Image 3
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 p-1">
+                  <div id="tmp4" class="thumb-img">
+                    <div
+                      class="thumb-text text-white bg-dark d-block position-absolute mb-1 mr-2"
+                    >
+                      <small class="pl-1 d-block position-relative">
+                        Image 4
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 p-1">
+                  <div id="tmp5" class="thumb-img">
+                    <div
+                      class="thumb-text text-white bg-dark d-block position-absolute mb-1 mr-2"
+                    >
+                      <small class="pl-1 d-block position-relative">
+                        Image 5
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-1 mb-2">
+              <div class="row">
+                <div class="col-12">
+                  <b>CAPTCHA</b>
+                  <img src="/img/contactus/captcha.png" alt="" />
+                  <button class="btn btn-light">CAPTCHA</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="termsAndConditions"
+                    />
+                    <small
+                      ><label class="form-check-label" for="termsAndConditions"
+                        ><u>De acuerdo con los t&eacute;rminos y condiciones</u>
+                      </label></small
+                    >
+                  </div>
+                  <div class="text-center mt-3">
+                    <button class="btn btn-kanvart text-white font-weight-bold">
+                      Aceptar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.text-primary {
+  color: #fe2635 !important;
+}
+
+.btn-kanvart {
+  background-color: #fe2635 !important;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  min-width: 200px;
+}
+
+.custom-font {
+  font-family: "Oswald", sans-serif;
+}
