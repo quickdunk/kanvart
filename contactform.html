@@ -132,18 +132,20 @@
               placeholder="Confirmar contraseña"
               class="form-control form-control-sm mb-2"
             />
+            <select
+              name="country"
+              id="country"
+              placeholder="Pa&iacute;s"
+              class="form-control form-control-sm mb-2"
+              onchange="updatePhoneCode()"
+            >
+              <option value="" selected disabled>País</option>
+            </select>
             <input
               type="text"
               name="phone"
               id="phone"
               placeholder="Tel&eacute;fono (formato internacional)"
-              class="form-control form-control-sm mb-2"
-            />
-            <input
-              type="text"
-              name="country"
-              id="country"
-              placeholder="Pa&iacute;s"
               class="form-control form-control-sm mb-2"
             />
             <p class="text-center">
@@ -267,6 +269,44 @@
         for (let i = 0; i < x.length; i++) {
           x[i].style.display = "block";
         }
+      }
+
+      function loadCountryData() {
+        fetch("data/country.json")
+          .then(response => {
+            return response.json();
+          })
+          .then(json => {
+            console.log(json);
+            let q = document.getElementById("country");
+            for (let i = 0; i < json.length; i++) {
+              var o = document.createElement("option");
+              o.innerHTML = json[i].countryName;
+              var att = document.createAttribute("value");
+              att.value = json[i].countryCode;
+              o.setAttributeNode(att);
+              q.appendChild(o);
+            }
+          });
+      }
+      loadCountryData();
+
+      function updatePhoneCode() {
+        var x = document.getElementById("country");
+        fetch("data/country.json")
+          .then(response => {
+            return response.json();
+          })
+          .then(json => {
+            const result = json.filter(item => {
+              if (item.countryCode == x.value) {
+                return item;
+              }
+            });
+            console.log(result);
+            var phone = document.getElementById("phone");
+            phone.value = result[0].phoneCode + " ";
+          });
       }
     </script>
   </body>
